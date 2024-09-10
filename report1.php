@@ -19,41 +19,42 @@ $result = mysqli_query($conn, $sql);
 
 // Check if there are any results and display them
 if (mysqli_num_rows($result) > 0) {
-    echo "<table style='text-align: center; align-items: center;'>
-            <tr>
-                <th>Demand Time</th>
-                <th>Demand ID</th>
-                <th>Zone From</th>
-                <th>Division From</th>
-                <th>Station From</th>
-                <th>Station From Name</th>
-                <th>Zone To</th>
-                <th>Division To</th>
-                <th>Station To</th>
-                <th>Station To Name</th>
-                <th>Rake Type</th>
-                <th>Consignor</th>
-                <th>Consignee</th>
-                <th>Units</th>
+    echo " <h1 style='text-align: center;'>Report 1 </h1>
+    <table style='text-align: center; align-items: center; border: 1px solid black'>
+            <tr style='border: 1px solid black'>
+                <th style='border: 1px solid black'>Demand Time</th>
+                <th style='border: 1px solid black'>Demand ID</th>
+                <th style='border: 1px solid black'>Zone From</th>
+                <th style='border: 1px solid black'>Division From</th>
+                <th style='border: 1px solid black'>Station From</th>
+                <th style='border: 1px solid black'>Station From Name</th>
+                <th style='border: 1px solid black'>Zone To</th>
+                <th style='border: 1px solid black'>Division To</th>
+                <th style='border: 1px solid black'>Station To</th>
+                <th style='border: 1px solid black'>Station To Name</th>
+                <th style='border: 1px solid black'>Rake Type</th>
+                <th style='border: 1px solid black'>Consignor</th>
+                <th style='border: 1px solid black'>Consignee</th>
+                <th style='border: 1px solid black'>Units</th>
             </tr>";
     
     // Fetch each row of results and display in table
     while ($row = mysqli_fetch_assoc($result)) {
-        echo "<tr>
-                <td>" . htmlspecialchars($row["Dmndtime"]) . "</td>
-                <td>" . htmlspecialchars($row["Dmndid"]) . "</td>
-                <td>" . htmlspecialchars($row["Zonefrom"]) . "</td>
-                <td>" . htmlspecialchars($row["Dvsnfrom"]) . "</td>
-                <td>" . htmlspecialchars($row["Sttnfrom"]) . "</td>
-                <td>" . htmlspecialchars($row["Sttnfromname"]) . "</td>
-                <td>" . htmlspecialchars($row["Zoneto"]) . "</td>
-                <td>" . htmlspecialchars($row["Dvsnto"]) . "</td>
-                <td>" . htmlspecialchars($row["Stinto"]) . "</td>
-                <td>" . htmlspecialchars($row["SttntoName"]) . "</td>
-                <td>" . htmlspecialchars($row["Raketype"]) . "</td>
-                <td>" . htmlspecialchars($row["Cnsr"]) . "</td>
-                <td>" . htmlspecialchars($row["Cnsg"]) . "</td>
-                <td>" . htmlspecialchars($row["Unts"]) . "</td>
+        echo "<tr style='border: 1px solid black'>
+                <td style='border: 1px solid black'>" . htmlspecialchars($row["Dmndtime"]) . "</td>
+                <td style='border: 1px solid black'>" . htmlspecialchars($row["Dmndid"]) . "</td>
+                <td style='border: 1px solid black'>" . htmlspecialchars($row["Zonefrom"]) . "</td>
+                <td style='border: 1px solid black'>" . htmlspecialchars($row["Dvsnfrom"]) . "</td>
+                <td style='border: 1px solid black'>" . htmlspecialchars($row["Sttnfrom"]) . "</td>
+                <td style='border: 1px solid black'>" . htmlspecialchars($row["Sttnfromname"]) . "</td>
+                <td style='border: 1px solid black'>" . htmlspecialchars($row["Zoneto"]) . "</td>
+                <td style='border: 1px solid black'>" . htmlspecialchars($row["Dvsnto"]) . "</td>
+                <td style='border: 1px solid black'>" . htmlspecialchars($row["Stinto"]) . "</td>
+                <td style='border: 1px solid black'>" . htmlspecialchars($row["SttntoName"]) . "</td>
+                <td style='border: 1px solid black'>" . htmlspecialchars($row["Raketype"]) . "</td>
+                <td style='border: 1px solid black'>" . htmlspecialchars($row["Cnsr"]) . "</td>
+                <td style='border: 1px solid black'>" . htmlspecialchars($row["Cnsg"]) . "</td>
+                <td style='border: 1px solid black'>" . htmlspecialchars($row["Unts"]) . "</td>
             </tr>";
     }
     echo "</table>"; // Close the table
