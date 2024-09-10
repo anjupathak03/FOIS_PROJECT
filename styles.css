@@ -1,0 +1,264 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+.navbar {
+    background-color: #333;
+    padding: 1em;
+}
+
+.logo h1 {
+    color: white;
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.nav-links {
+    list-style: none;
+    display: inline;
+}
+
+.nav-links li {
+    display: inline;
+    margin: 0 10px;
+}
+
+.nav-links li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    background-color: #f08a24;
+    border-radius: 4px;
+}
+
+.nav-links li a:hover {
+    background-color: #d17820;
+}
+
+.main-content {
+    padding: 2em;
+    text-align: center;
+}
+
+.main-content h2 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+.main-content p {
+    font-size: 1.2em;
+    color: #555;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f8f8;
+}
+
+/* Navbar Styling */
+.navbar {
+    background-color: #004080; /* Dark Blue */
+    padding: 1em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo h1 {
+    color: white;
+    font-size: 1.8em;
+    margin-left: 20px;
+    font-weight: bold;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    margin-right: 20px;
+}
+
+.nav-links li {
+    margin-left: 20px;
+}
+
+.nav-links li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2em;
+    padding: 10px 15px;
+    background-color: #f9b233; /* Orange Button */
+    border-radius: 5px;
+}
+
+.nav-links li a:hover {
+    background-color: #f08000; /* Darker Orange Hover Effect */
+}
+
+/* Main Content Styling */
+.main-content {
+    background-color: #ffcc66; /* Light Orange Background */
+    padding: 5em;
+    text-align: center;
+}
+
+.main-content h2 {
+    font-size: 2.5em;
+    color: #003366; /* Dark Blue Text */
+    margin-bottom: 20px;
+}
+
+.main-content p {
+    font-size: 1.5em;
+    color: #333;
+    font-weight: bold;
+}
+
+/* Form Section Styling */
+.form-section {
+    padding: 3em;
+    background-color: #fff;
+    width: 30%;
+    margin: 3em auto;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-section h2 {
+    font-size: 2em;
+    color: #003366; /* Dark Blue */
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.form-section label {
+    display: block;
+    font-size: 1.2em;
+    color: #003366; /* Dark Blue */
+    margin-bottom: 10px;
+}
+
+.form-section input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.form-section button {
+    background-color: #f9b233; /* Orange Button */
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    width: 100%;
+    font-size: 1.2em;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.form-section button:hover {
+    background-color: #f08000; /* Darker Orange Hover */
+}
+
+.form-section p {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.form-section a {
+    color: #f08000; /* Darker Orange Text */
+    text-decoration: none;
+}
+/* Add this to your existing CSS */
+.image-section {
+    margin-top: 0em;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.homepage-image {
+    max-width: 99%; /* Adjust width to fit multiple images */
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Ensure images are responsive on smaller screens */
+@media (max-width: 768px) {
+    .homepage-image {
+        max-width: 90%; /* Full width for smaller screens */
+    }
+}
+.homepage-image {
+    width: 80%; /* Increases the width to 80% of the parent container */
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 768px) {
+    .homepage-image {
+        width: 100%; /* On smaller screens, the image takes full width */
+    }
+}
+.homepage-image {
+    width: 900px; /* Set a fixed width */
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 768px) {
+    .homepage-image {
+        width: 100%; /* Full width on small screens */
+    }
+}
+/* Container for the images */
+.image-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px; /* Space between the images */
+    flex-wrap: wrap; /* Allow images to wrap on smaller screens */
+    margin-top: 2em;
+}
+
+.homepage-image {
+    width: 40%; /* Set initial width of both images to 45% of the container */
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease; /* Smooth transition for hover effects or size changes */
+}
+
+/* Hover effect for larger screens */
+.homepage-image:hover {
+    transform: scale(1.05); /* Slight zoom-in effect on hover */
+}
+
+/* On smaller screens, stack the images and make them full width */
+@media (max-width: 768px) {
+    .homepage-image {
+        width: 100%; /* Take 90% of the screen width on smaller devices */
+        margin-bottom: 20px; /* Add margin between the images when stacked */
+        margin-top: 40px;
+    }
+}
+
+@media (max-width: 480px) {
+    .homepage-image {
+        width: 100%; /* Take full width on very small screens (like mobile) */
+    }
+}
+
+
+
