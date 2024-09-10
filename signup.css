@@ -1,0 +1,128 @@
+body {
+    background: #000;
+    background-size: 100%;
+    font-family: 'Arvo', serif;
+    text-align: center;
+}
+
+#myVideo {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  max-width: 100%;
+  z-index: -1;
+}
+
+.hamburger{
+    width: 35px;
+    height: 5px;
+    background-color: #eee;
+    margin: 6px 0;
+    display: grid;
+    align-items: center;
+}
+
+.main {
+    display: flex;
+    background-color: lightblue;
+    opacity: 90%;
+    width: 100%;
+    padding: 5px;
+    margin-right: -20px;
+    margin-bottom: 50px;
+    align-items: center;
+}
+
+.bg-aqua {
+    font-family: 'Archivo Black', sans-serif;
+    /* padding: 20px; */
+    /* background-color: #2a8edf; */
+    background-color: transparent;
+    /* display: flex; */
+    justify-content: space-between;
+    text-align: center;
+    max-width: 100%;
+}
+
+.mycard {
+    background-color: white;
+    opacity: 90%;
+}
+
+.navbarcontent {
+    display: flex;
+    margin-left: 52.54em;
+    align-items: center;
+}
+
+h2{
+    text-align: center;
+}
+
+form {
+    text-align: center;
+    margin-top: 40px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+}
+
+table {
+    text-align: center;
+    margin: auto;
+    padding: 5px;
+    font-size: 20px;
+}
+
+.signupform {
+    border-radius: 60px;
+    background-color: white;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    margin-left: 25em;
+    margin-right: 25em;
+    opacity: 0.9;
+}
+
+td{
+    vertical-align: text-top;
+    padding: 10px;
+}
+
+.one {
+    margin-left: 5px;
+    align-items: center;
+}
+
+.two {
+    margin-left: 15px;
+    margin-right: 20px;
+}
+
+.three {
+    vertical-align: text-bottom;
+}
+
+.four {
+    text-align: right;
+}
+
+.lotus_icon {
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 20px;
+    background-color: lightblue;
+    opacity: 90%;
+}
+
+.lotus{
+    height: 50px;
+    width: 50px;
+}
+
+.img-icon {
+    display: block;
+    width: 100px;
+    height: 100px;
+    margin: auto;
+
+}

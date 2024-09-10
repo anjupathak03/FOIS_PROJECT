@@ -1,0 +1,16 @@
+.bg-aqua {
+    font-family: 'Archivo Black', sans-serif;
+    /* padding: 20px; */
+    /* background-color: #2a8edf; */
+    background-color: transparent;
+    /* display: flex; */
+    justify-content: space-between;
+    text-align: center;
+    max-width: 100%;
+}
+
+.navbarcontent {
+    display: flex;
+    margin-left: 51em;
+    align-items: center;
+}
