@@ -31,15 +31,15 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             // Insert user data into the users table
             $sql = "INSERT INTO users (username, email, password) VALUES ('$username', '$email', '$hashed_password')";
             if ($conn->query($sql) === TRUE) {
-                echo "<p class='success' style='background-color: #eee; margin:0; padding-left: 5;'> Registration successful! You can now <a href='login.php'>login</a>.</p>";
+                echo "<p class='success' style='z-index: 3; position: fixed; background-color: #eee; width: 100%; margin:0; padding-left: 5;'> Registration successful! You can now <a href='login.php'>login</a>.</p>";
             } else {
                 echo "Error: " . $sql . "<br>" . $conn->error;
             }
         } else {
-            echo "<p style='background-color: #eee; margin:0; padding-left: 5;'>Username or email already exists!</p>";
+            echo "<p style=' z-index: 3; position: fixed; color: red; background-color: #eee; width: 100%; margin:0; padding-left: 5;'>Username or email already exists!</p>";
         }
     } else {
-        echo "<p style='background-color: #eee; color:red; margin:0; padding-left: 5;'>Passwords do not match!</p>";
+        echo "<p style='z-index: 3; background-color: #004080; color:red; margin:0; padding-left: 5;'>Passwords do not match!</p>";
     }
 }
 ?>
@@ -48,53 +48,20 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 <html>
 <head>
     <link rel="stylesheet" href="signup.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Arvo&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap" rel="stylesheet">
     <title>Sign Up</title>
 </head>
-<body style="background-color: #eee;">
+<body>
 
-<video autoplay muted loop id="myVideo">
-    <source src="images/tr.mp4" type="video/mp4">
-  </video>
-
-    <nav class="bg-aqua">
-        <div class="main">
-            <div class="one">
-                <a href="#">
-                    <div class="hamburger"></div>
-                    <div class="hamburger"></div>
-                    <div class="hamburger"></div>
-                </a>
+    <div class="main-container">
+        <nav class="navbar">
+            <div class="logo">
+                <a href="index.html"><h1>FOIS</h1></a>
             </div>
-            <div class="two">
-                <a href="#" class="navbar-brand text-white"><strong>Lotus</strong></a>
-            </div>
-            <div class="navbarcontent">
-              <div class="three">
-                <a href="/demo/index.php" class="navbar">Home</a>
-              </div>
-              <div class="three">
-                <a href="/demo/info.php" class="navbar">Info</a>
-              </div>
-              <div class="four">
-                <a href="#" class="navbar">Contact Us</a>
-              </div>
-              <div class="three">
-                <a href="/demo/login.php" class="navbar">Login</a>
-              </div>
-              <div class="lotus_icon">
-                  <a href="#"><img src="images/lotusfinal.png" class="lotus" alt=""></a>
-              </div>
-            </div>
-        </div>
-
-    </nav>
+            <ul class="nav-links">
+                <h1>Sign Up</h1>
+            </ul>
+        </nav>
+    </div>
 
     <div class="signupform">
         <h2>Sign Up</h2>
@@ -117,8 +84,12 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                     <td><input type="password" placeholder="Confirm Password" name="confirm_password" required></td>
                 </tr>
             </table>
-            <input type="submit" style="margin-top: 30px; width: 200px;" value="Sign Up">
+            <a class="newuser" href="/FOIS_PROJECT/login.php"><p>Already a user? Click here to log in</p></a>
+            <input type="submit" style="margin-top: 30px; width: 200px;" value="Sign Up" class="subtn">
         </form>
     </div>
+    <footer class="footer">
+        <h3>Made under CRIS</h3>
+    </footer>
 </body>
 </html>

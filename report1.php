@@ -19,7 +19,7 @@ $result = mysqli_query($conn, $sql);
 
 // Check if there are any results and display them
 if (mysqli_num_rows($result) > 0) {
-    echo " <h1 style='text-align: center;'>Report 1 </h1>
+    echo " <h1 style='text-align: center;'>Report 1: AUTO Rakes Cancelled Demands </h1>
     <table style='text-align: center; align-items: center; border: 1px solid black'>
             <tr style='border: 1px solid black'>
                 <th style='border: 1px solid black'>Demand Time</th>
